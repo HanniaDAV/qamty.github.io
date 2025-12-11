@@ -8,13 +8,15 @@ body {
 header {
     justify-content: center;
     padding-right: 4%;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
     text-align: center;
-    font-size: 6em;
+    font-size: 5em;
     color: #420202;
-    margin: 0PX;
+    margin: 0px;
 }
 
 .headerthermo{
@@ -30,8 +32,24 @@ h1 {
 
 hr {
     border: none;
-    border-top: 2px solid #ebe2e2;
+    border-top: 2px solid #3d3838;
     max-width: 95%;
+}
+
+/* Centered horizontal rule utility */
+.center-hr {
+    width: 90%;
+    margin: 0.5rem auto;
+    border: none;
+    height: 2px;
+    background: #3d3838;
+    margin-right: 3%;
+}
+
+@media (max-width: 480px) {
+    .center-hr {
+        width: 80%;
+    }
 }
 
 /* The boxes */
@@ -101,20 +119,20 @@ hr {
 }
 
 .thermoicon{
-    max-width: 200px;
+    max-width: 150px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: block;
 }
 
 .mtyicon{
-    max-width: 200px;
+    max-width: 150px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display:block;
     /* push this item to the right when inside a flex container */
     margin-left: auto;
-    padding-right: 5px;
+    padding-right: 3%;
 }
 
 footer {
